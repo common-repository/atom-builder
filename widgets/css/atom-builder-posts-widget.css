@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+# Atom Posts Widget 
+--------------------------------------------------------------*/
+.atom-builder-posts-widget-entry {
+  margin-bottom: 3em;
+}
+
+.atom-builder-posts-widget-thumbnail {
+  display: block;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 60em) {
+  .atom-builder-widget.atom-builder-posts-widget {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .atom-builder-widget.atom-builder-posts-widget .widget-title {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .atom-builder-widget.atom-builder-posts-widget .atom-builder-posts-widget-entry {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 14em;
+    flex: 1 1 14em;
+    margin-right: 1.5em;
+  }
+  .atom-builder-widget.atom-builder-posts-widget .atom-builder-posts-widget-entry:last-of-type {
+    margin-right: 0;
+  }
+}
